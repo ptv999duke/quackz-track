@@ -1,0 +1,14 @@
+#General
+/bin/
+
+#Gradle files
+/.gradle/
+gradlew.bat
+gradlew
+/gradle
+settings.gradle
+
+#Eclipse files
+/.settings
+/.classpath
+/.project
