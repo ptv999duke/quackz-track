@@ -11,10 +11,10 @@ import com.quackztrack.apiserver.services.base.IItemsService;
 @Configuration
 @Profile("Postgres")
 public class PostgresServiceConfig {
-	
-	@Bean
-	@Scope("singleton")
-	public IItemsService itemsService() {
-		return new PostgresItemsService();
-	}
+
+    @Bean
+    @Scope("singleton")
+    public IItemsService itemsService() {
+        return new PostgresItemsService();
+    }
 }

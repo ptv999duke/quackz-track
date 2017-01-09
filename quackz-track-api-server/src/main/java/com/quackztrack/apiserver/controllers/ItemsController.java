@@ -10,16 +10,15 @@ import com.quackztrack.apiserver.services.base.IItemsService;
 @RestController
 public class ItemsController {
 
-	private IItemsService itemsService;
-	
-	@RequestMapping("/putitem")
-	public void putItem() {
-		this.itemsService.putItem();
-	}
-	
-	@Autowired
-	public ItemsController(IItemsService itemsService)
-	{
-		this.itemsService = itemsService;
-	}
+    private IItemsService itemsService;
+
+    @Autowired
+    public ItemsController(IItemsService itemsService) {
+        this.itemsService = itemsService;
+    }
+
+    @RequestMapping("/putitem")
+    public void putItem() {
+        this.itemsService.putItem();
+    }
 }

@@ -11,10 +11,10 @@ import com.quackztrack.apiserver.services.base.IItemsService;
 @Configuration
 @Profile("Mongo")
 public class MongoServiceConfig {
-	
-	@Bean
-	@Scope("singleton")
-	public IItemsService itemsService() {
-		return new MongoItemsService();
-	}
+
+    @Bean
+    @Scope("singleton")
+    public IItemsService itemsService() {
+        return new MongoItemsService();
+    }
 }
