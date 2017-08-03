@@ -15,10 +15,10 @@
 hs_err_pid*
 
 # go bin and pkg
-./*/bin/*
-./*/pkg/*
+*/bin/*
+*/pkg/*
 
 #eclipse files
 .metadata/*
 .recommenders/*
-./*/.project
+*/.project
